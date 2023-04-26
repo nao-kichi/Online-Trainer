@@ -58,21 +58,6 @@ body {
     margin-bottom: 16px;
   }
   
-  section h2 {
-    font-size: 24px;
-    margin-top: 24px;
-  }
-  
-  section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  section li {
-    margin-bottom: 8px;
-  }
-  
   table {
     width: 100%;
     border-collapse: collapse;
@@ -88,47 +73,16 @@ body {
   th {
     background-color: #eee;
   }
-  
-  /* 問い合わせフォームをオシャレにする */
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  form button[type="submit"] {
-    display: block;
-    margin: 20px auto 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button[type="submit"]:hover {
-    background-color: #666;
+
+  a {
+    font-size: 1.4em;
+    color: black;
+    text-shadow: 1px 1px 1px gray;
   }
   
   /* フッター */
   footer {
+    margin-top: 30px;
     background-color: #333;
     color: white;
     padding: 16px;
@@ -157,10 +111,6 @@ body {
     .image-container img {
       max-width: 100%;
       height: auto;
-    }
-  
-    section h2 {
-      font-size: 20px;
     }
   
     table {
@@ -213,10 +163,6 @@ body {
     .image-container img {
       max-width: 100%;
       height: auto;
-    }
-  
-    section h2 {
-      font-size: 18px;
     }
   
     table {

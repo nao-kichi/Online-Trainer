@@ -5,7 +5,11 @@
     <title>松本尚輝のオンライントレーニング塾</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/image/email.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/sendAfter.js"></script> <!-- 送信後js -->
 </head>
 
 <body>
@@ -25,19 +29,19 @@
     <div class="container">
         <section>
             <div class="image-container">
-                <img src="./src/image/Profile.jpg" alt="画像1の説明">
-                <img src="./src/image/Contest.jpg" alt="画像2の説明">
+                <img src="./src/image/profile.jpg" alt="画像1の説明">
+                <img src="./src/image/contest.jpg" alt="画像2の説明">
             </div>
             <br><br>
             <h1>自己紹介</h1>
             <h2 id="profile">経歴</h2>
             <p>2018年 11月 株式会社THINK FITNESS(ゴールドジム)に正社員として入社</br>
-               2021年 12月 株式会社THINK FITNESS 退社</br>
-               2022年 1月 フリーランスとして、ゴールドジム表参道・エニタイム神宮前・エニタイム西新宿にて指導開始</br>
-               2023年 4月 本業でWeb系フロントエンドエンジニアとして働く傍ら、オンラインにて指導を継続
-               <h2>資格・実績</h2>
+                2021年 12月 株式会社THINK FITNESS 退社</br>
+                2022年 1月 フリーランスとして、ゴールドジム表参道・エニタイム神宮前・エニタイム西新宿にて指導開始</br>
+                2023年 4月 本業でWeb系フロントエンドエンジニアとして働く傍ら、オンラインにて指導を継続
+            <h2>資格・実績</h2>
             <p>2020年 10月 NSCA-CPT(米国)資格取得</br>
-               2020年 12月 整体ボディケアセラピスト資格取得</p>
+                2020年 12月 整体ボディケアセラピスト資格取得</p>
         </section>
         <br><br>
 
@@ -77,56 +81,13 @@
         </section>
         <br><br>
 
-        <!-- 一言とリンク -->
         <h2 id="message">メッセージ</h2>
         <p>最短で結果を出します。1人で悩んでいる方、まずはご相談ください。美しい体へ私が導きます。</p>
-        <br><br>
-
-        <!-- ここで入力したメールアドレスが送信元となる -->
-        <section>
-            <h2 id="contact">問い合わせ</h2>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <input type="hidden" name="accessKey" value="01670bbe-3706-4b7a-8ec1-36a7e6683ace">
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">メールアドレス</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">メッセージ</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">送信</button>
-            </form>
-        </section>
-
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVFpjhTZNLgspna7GJu9omqRMtu0IS3ci-xGfv6YimjJxqiQ/viewform?usp=sf_link">問い合わせフォームはこちらから</a>
     </div>
     <footer>
         <p>Copyright © 2023</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-          $('form').submit(function(event) {
-            event.preventDefault();
-            $.ajax({
-              type: 'POST',
-              url: 'https://api.staticforms.xyz/submit',
-              data: $('form').serialize(),
-              success: function(data) {
-                $('form').hide();
-                alert('送信が完了しました');
-              },
-              error: function(err) {
-                alert('エラーが発生しました');
-              }
-            });
-          });
-        });
-        </script>
-
 </body>
 
 </html>

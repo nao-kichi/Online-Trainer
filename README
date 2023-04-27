@@ -1,0 +1,6 @@
+#お問い合わせフォームの実装
+
+ドライブ: https://docs.google.com/forms/d/1KfoGb0rUy4hQI0qefvGHE-AlQBZR_2-pi37oqhPw6xo/edit
+参考サイト: https://monomonotech.jp/kurage/memo/m220202_googleform_html.html
+
+Googleフォームのパスやその他カラムのidは.envに記載している。

@@ -76,9 +76,32 @@
 
         <h2 id="message">メッセージ</h2>
         <p>最短で結果を出します。1人で悩んでいる方、まずはご相談ください。美しい体へ私が導きます。</p><br>
-        <h2 id="contact">問い合わせ</h2>
-        <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfVFpjhTZNLgspna7GJu9omqRMtu0IS3ci-xGfv6YimjJxqiQ/viewform?usp=sf_link">問い合わせフォームはこちらから</a>
+        <h2 id="contact">お問い合わせ</h2>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeJvJvf6FAgtzVQiqdFELjkSarTHrd0-NeX1aGkk_kcoSzaGw/formResponse" method="post" target="hidden_iframe"
+            onsubmit="submitted=true;">
+    
+            お名前(会社名)<br>
+            <input type="text" name="entry.2140063385"><br>
+            <br>
+            メールアドレス<br>
+            <input type="text" name="entry.261495065"><br>
+            <br>
+            メッセージ<br>
+            <textarea name="entry.547298138" rows="3" cols="50"></textarea>
+            <br>
+            <button type="submit">送信</button>
+    
+        </form>
+        <script>
+            let submitted = false;
+    
+            const page_transition = function () {
+                if (submitted) {
+                    window.location = 'thanks.html';
+                }
+            }
+        </script>
+        <iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
     </div>
     <footer>
         <p>Copyright © 2023</p>

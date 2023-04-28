@@ -86,7 +86,7 @@ th {
 }
 
 form {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   font-family: Arial, sans-serif;
 }
@@ -111,7 +111,7 @@ button[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   padding: 10px;
-  font-size: 16px;
+  font-size: 24px;
   width: 50%;
   transition: all 0.3s ease;
 }
@@ -173,6 +173,7 @@ footer {
   }
   button[type="submit"] {
     width: 100%;
+    font-size: 18px;
   }
 }
 
@@ -222,6 +223,6 @@ footer {
   }
   button[type="submit"] {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
